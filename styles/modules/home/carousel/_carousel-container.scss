@@ -1,0 +1,46 @@
+.carousel {
+  @import "./home-carousel";
+  --text-container-y: auto;
+  background-color: pink;
+  height: 90vh;
+  width: 100%;
+  box-shadow: -2.5px 0px 25px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  position: relative;
+  .info-container {
+    position: absolute;
+    height: 40%;
+    z-index: 1;
+    background-color: rgb(72, 72, 72);
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5vw;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    .slide-heading {
+      font-size: 2rem;
+      color: yellowgreen;
+    }
+    .slide-sub-heading {
+      font-size: 3.2rem;
+      color: white;
+      margin-bottom: 3vh;
+    }
+    .slide-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .book-btn {
+        @include default-btn;
+      }
+      .about-btn {
+        @include default-btn;
+        font-size: 1rem;
+        padding: 1em 2em;
+        cursor: pointer;
+      }
+    }
+  }
+}

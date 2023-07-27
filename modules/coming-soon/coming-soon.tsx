@@ -3,7 +3,7 @@ import { PartyLottie } from "./party-lottie";
 
 export default function ComingSoon() {
   return (
-    <section id="home" aria-label="home">
+    <section id="homes" aria-label="home">
       <div className="img-container">
         <Image
           src="/assets/images/background.jpg"

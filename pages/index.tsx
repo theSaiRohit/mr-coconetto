@@ -1,5 +1,5 @@
-import ComingSoon from "@/modules/coming-soon/coming-soon";
+import HomeContainer from "@/modules/home/home-container";
 
 export default function Home() {
-  return <ComingSoon />;
+  return <HomeContainer />;
 }
