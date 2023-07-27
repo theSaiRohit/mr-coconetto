@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import HomeAbout from "./home-about";
 import HomeChoose from "./home-choose";
 import HomeGallery from "./home-gallery";
 import CarouselContainer from "./carousel/carousel-container";
 
 export default function HomeContainer() {
+  const aboutRef = useRef(null);
   return (
-    <section id="home" aria-label="home">
-      <CarouselContainer />
-      <HomeAbout />
+    <>
+      <CarouselContainer aboutRef={aboutRef} />
+      <HomeAbout ref={aboutRef} />
       <HomeChoose />
       <HomeGallery />
-    </section>
+    </>
   );
 }

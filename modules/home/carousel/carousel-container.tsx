@@ -1,13 +1,15 @@
-import { useCallback, useEffect, useRef } from "react";
-import Link from "next/link";
+import { RefObject, useCallback, useEffect, useRef } from "react";
 import HomeCarousel from "./home-carousel";
 
-export default function CarouselContainer() {
+export default function CarouselContainer({
+  aboutRef,
+}: {
+  aboutRef: RefObject<HTMLDivElement>;
+}) {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollCallback = useCallback(function scrollerFunction() {
     const scrollPos = window.scrollY;
-
     if (carouselRef.current) {
       carouselRef.current.style.transform = `translateY(${scrollPos / 2.6}px)`;
     }
@@ -21,21 +23,23 @@ export default function CarouselContainer() {
   }, [scrollCallback]);
 
   const clickHandler = useCallback(function clickFunction() {
-    const target = document.querySelector(".home-about");
-    const scrollElem = target?.scrollIntoView({ behavior: "smooth" });
-    return scrollElem;
+    const target = aboutRef?.current;
+    target?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
   return (
     <div className="carousel">
       <div className="info-container">
-        <h1 className="slide-heading">Mr Coconetto</h1>
-        <h2 className="slide-sub-heading">Book now for an extravagenza</h2>
+        <h1 className="slide-heading">
+          <span className="slide-sub-heading _1">Mr Coconetto</span>
+          <span className="slide-sub-heading _2">We are the greatest</span>
+        </h1>
         <div className="slide-cta">
-          <Link href="/" className="book-btn">
-            Book Now
-          </Link>
-          <button className="about-btn" type="button" onClick={clickHandler}>
+          <button
+            className="about-btn default-btn"
+            type="button"
+            onClick={clickHandler}
+          >
             About Us
           </button>
         </div>

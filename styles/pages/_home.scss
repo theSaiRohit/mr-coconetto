@@ -1,1 +1,6 @@
-@import "../modules/home/home-container";
+#home {
+  @import "../modules/home";
+  height: 600vh;
+  width: 100%;
+  font-family: var(--default-font);
+}

@@ -2,7 +2,7 @@
   @import "./home-carousel";
   --text-container-y: auto;
   background-color: pink;
-  height: 90vh;
+  height: 99vh;
   width: 100%;
   box-shadow: -2.5px 0px 25px rgba(0, 0, 0, 0.85);
   overflow: hidden;
@@ -11,32 +11,49 @@
     position: absolute;
     height: 40%;
     z-index: 1;
-    background-color: rgb(72, 72, 72);
     display: flex;
     flex-direction: column;
     padding: 0 2.5vw;
     justify-content: center;
+    align-items: flex-start;
     top: 50%;
     transform: translateY(-50%);
     left: 5%;
-    .slide-heading {
-      font-size: 2rem;
-      color: yellowgreen;
+    &::before {
     }
-    .slide-sub-heading {
-      font-size: 3.2rem;
-      color: white;
-      margin-bottom: 3vh;
+    &::after {
+    }
+    .slide-heading {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      .slide-sub-heading {
+        color: yellowgreen;
+        line-height: 0.9em;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+        &._1 {
+          font-size: 1em;
+          text-transform: uppercase;
+          word-spacing: 1em;
+          letter-spacing: 0.4em;
+          font-family: var(--font-subheading);
+          font-weight: 600;
+        }
+        &._2 {
+          font-family: var(--font-heading);
+          font-size: 3.2em;
+          color: white;
+          margin-bottom: 3vh;
+        }
+      }
     }
     .slide-cta {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       .book-btn {
-        @include default-btn;
       }
       .about-btn {
-        @include default-btn;
         font-size: 1rem;
         padding: 1em 2em;
         cursor: pointer;
