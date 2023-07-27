@@ -2,15 +2,37 @@
   @import "./home-carousel";
   --text-container-y: auto;
   background-color: pink;
-  height: 99vh;
+  height: 100vh;
   width: 100%;
   box-shadow: -2.5px 0px 25px rgba(0, 0, 0, 0.85);
   overflow: hidden;
   position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 20%;
+    height: 100%;
+    width: 70%;
+    border-top: 100vh solid var(--color-carousel-sheet);
+    border-left: 40vw solid transparent;
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-top: 100vh solid var(--color-carousel-sheet);
+    border-right: 60vw solid transparent;
+    z-index: 1;
+  }
   .info-container {
     position: absolute;
     height: 40%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     padding: 0 2.5vw;
@@ -19,10 +41,6 @@
     top: 50%;
     transform: translateY(-50%);
     left: 5%;
-    &::before {
-    }
-    &::after {
-    }
     .slide-heading {
       display: flex;
       flex-direction: column;
@@ -32,7 +50,7 @@
         line-height: 0.9em;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
         &._1 {
-          font-size: 1em;
+          font-size: 0.9em;
           text-transform: uppercase;
           word-spacing: 1em;
           letter-spacing: 0.4em;
@@ -41,7 +59,7 @@
         }
         &._2 {
           font-family: var(--font-heading);
-          font-size: 3.2em;
+          font-size: 4em;
           color: white;
           margin-bottom: 3vh;
         }
@@ -51,8 +69,6 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      .book-btn {
-      }
       .about-btn {
         font-size: 1rem;
         padding: 1em 2em;

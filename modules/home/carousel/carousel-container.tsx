@@ -1,5 +1,6 @@
 import { RefObject, useCallback, useEffect, useRef } from "react";
 import HomeCarousel from "./home-carousel";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function CarouselContainer({
   aboutRef,
@@ -31,8 +32,8 @@ export default function CarouselContainer({
     <div className="carousel">
       <div className="info-container">
         <h1 className="slide-heading">
-          <span className="slide-sub-heading _1">Mr Coconetto</span>
-          <span className="slide-sub-heading _2">We are the greatest</span>
+          <span className="slide-sub-heading _1">We are the greatest</span>
+          <span className="slide-sub-heading _2">Mr Coconetto</span>
         </h1>
         <div className="slide-cta">
           <button
@@ -40,7 +41,8 @@ export default function CarouselContainer({
             type="button"
             onClick={clickHandler}
           >
-            About Us
+            <span className="btn-span">About Us</span>
+            <FaChevronRight className="arrow-right" />
           </button>
         </div>
       </div>

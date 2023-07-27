@@ -33,12 +33,7 @@ export default function HomeCarousel() {
       showDots={false}
       autoPlaySpeed={2500}
       keyBoardControl={true}
-      removeArrowOnDeviceType={[
-        "desktop",
-        "mobileLarge",
-        "tablet",
-        "mobileSmall",
-      ]}
+      arrows={false}
     >
       {slideData.map(carouselMapper)}
     </Carousel>

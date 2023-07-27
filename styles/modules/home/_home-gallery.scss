@@ -27,14 +27,14 @@
       word-spacing: 15px;
       letter-spacing: 5px;
       text-align: center;
+      font-family: var(--font-subheading);
     }
     .gallery-heading {
       font-size: var(--h2-font-size);
       text-shadow: 0 0 5px black, 0 0 10px black;
       margin-bottom: 4vh;
       text-align: center;
-    }
-    .gallery-btn {
+      font-family: var(--font-heading);
     }
   }
   @media only screen and (max-width: 900px) {

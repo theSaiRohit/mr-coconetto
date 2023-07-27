@@ -20,25 +20,25 @@ export const landingResponsive = {
 
 export const slideData = [
   {
-    slideBackground: "background.jpg",
+    slideBackground: "main.jpg",
     imageAlt: "dummy alt",
   },
   {
-    slideBackground: "background.jpg",
+    slideBackground: "wedding.jpg",
     imageAlt: "dummy alt",
   },
   {
-    slideBackground: "background.jpg",
+    slideBackground: "main.jpg",
     imageAlt: "dummy alt",
   },
   {
-    slideBackground: "background.jpg",
+    slideBackground: "wedding.jpg",
     imageAlt: "dummy alt",
   },
 ];
 
 export const homeAboutData = {
-  aboutHeading: "Mr cocnetto - India;s most trusted coconut",
+  aboutHeading: "Mr cocnetto - India's most trusted coconut",
   aboutDesc:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veniam reprehenderit rem dolores\
     omnis cupiditate deserunt corrupti dignissimos amet molestias harum eos itaque est nesciunt labore obcaecati\

@@ -1,7 +1,7 @@
 .home-choose {
   --grid-col: 6;
   --brief-width: 150px;
-  padding: 7.5vh 0;
+  padding: 10vh 0;
   background-color: pink;
   width: 100%;
   display: flex;
@@ -13,8 +13,9 @@
     width: fit-content;
     color: var(--font-color);
     position: relative;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     text-align: center;
+    font-family: var(--font-heading);
     &::before {
       content: "";
       position: absolute;
@@ -51,6 +52,7 @@
       }
       .choose-brief {
         width: var(--brief-width);
+        font-family: var(--font-subheading);
       }
       &:hover {
         background-color: var(--card-hover-color);

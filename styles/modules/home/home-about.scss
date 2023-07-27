@@ -1,8 +1,9 @@
 .home-about {
   --text-container-y: 40%;
-  --about-header: 2rem;
+  --about-header: 3.2rem;
   padding: 7.5vh 0;
   width: 100%;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +22,10 @@
     .about-heading {
       font-size: var(--about-header);
       margin-bottom: 2vh;
+      font-family: var(--font-heading);
+    }
+    .about-description {
+      font-family: var(--font-default);
     }
     .about-btn {
       margin-top: 4vh;
