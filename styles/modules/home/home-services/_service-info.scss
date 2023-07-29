@@ -1,18 +1,31 @@
 .service-info-container {
-  width: 40%;
+  width: 55%;
+  .texts-wrapper {
+    .text-container {
+      &.inactive {
+        height: 1px;
+        width: 1px;
+        opacity: 0;
+        overflow: hidden;
+      }
+    }
+  }
   .service-heading {
-    font-size: var(--h1-font-size);
+    font-size: 7rem;
     font-family: var(--font-heading);
-    color: var(--color-active);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   .service-desc {
     font-family: var(--font-default);
     color: var(--font-color);
-    margin: 2vh 0 10vh 0;
+    margin: 3vh 0 10vh 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
   .services-cta {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
   }
 }

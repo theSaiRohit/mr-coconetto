@@ -5,7 +5,7 @@ import { galleryText } from "./home-data";
 
 export default function HomeGallery() {
   return (
-    <div className="home-gallery">
+    <div className="home-gallery" aria-label="View our gallery">
       <div className="img-container gallery-img-container">
         <Image
           src="/assets/images/wedding.jpg"

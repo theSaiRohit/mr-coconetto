@@ -1,12 +1,13 @@
 .home-about {
   --text-container-y: 40%;
-  --about-header: 3.2rem;
+  --about-header: 4rem;
   padding: 7.5vh 0;
   width: 100%;
   min-height: 70vh;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   scroll-margin-top: 10vh;
   .home-about-img-container {
     height: 350px;
@@ -26,6 +27,8 @@
     }
     .about-description {
       font-family: var(--font-default);
+      font-size: 1.2rem;
+      line-height: 2rem;
     }
     .about-btn {
       margin-top: 4vh;

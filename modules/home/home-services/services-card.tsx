@@ -1,13 +1,14 @@
-import { Dispatch, SetStateAction, useCallback, useState } from "react";
+import { Dispatch, SetStateAction, useCallback, useEffect } from "react";
 import Image from "next/image";
-import { serviceCardData } from "../home-data";
 
 export default function ServiceCardsWrapper({
-  setterFunc,
+  indexState,
+  dataArr,
 }: {
-  setterFunc: Dispatch<SetStateAction<any | undefined>>;
+  dataArr: any[];
+  indexState: [number, Dispatch<SetStateAction<number>>];
 }) {
-  const [indexNum, setIndexNum] = useState<number>(0);
+  const [indexNum, setIndexNum] = indexState;
   const serviceCardMapper = useCallback(
     function cardMapper(data: any, index: number) {
       return (
@@ -16,6 +17,9 @@ export default function ServiceCardsWrapper({
             indexNum === index ? "active" : ""
           }`}
           key={index}
+          onClick={() => {
+            setIndexNum(index);
+          }}
         >
           <Image
             src={`/assets/images/${data.imgUrl}`}
@@ -24,10 +28,6 @@ export default function ServiceCardsWrapper({
             sizes="100%"
             priority
             className="services-img"
-            onClick={() => {
-              setIndexNum(index);
-              setterFunc(data);
-            }}
           />
           <h3 className="card-heading">
             {index + 1}. {data.cardHeading}
@@ -35,13 +35,13 @@ export default function ServiceCardsWrapper({
         </div>
       );
     },
-    [setterFunc, indexNum]
+    [setIndexNum, indexNum]
   );
   return (
     <div className="service-cards-wrapper">
-      <span className="wrapper-heading">Services We Offer</span>
+      <h2 className="wrapper-heading">Services We Offer</h2>
       <div className="service-cards-container">
-        {serviceCardData.map(serviceCardMapper)}
+        {dataArr.map(serviceCardMapper)}
       </div>
     </div>
   );

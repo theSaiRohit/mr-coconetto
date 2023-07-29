@@ -1,25 +1,27 @@
 import { useCallback } from "react";
-import { chooseCardData } from "./home-data";
+import DefaultButton from "@/components/default-button";
+import Image from "next/image";
+import beachAni from "@images/beach-ani.gif";
 
 export default function HomeChoose() {
-  const chooseCardsMapper = useCallback(function cardMapper(
-    data: any,
-    index: number
-  ) {
-    const { Icon } = data;
-    return (
-      <div className="choose-card" key={index}>
-        <Icon className="card-icon" />
-        <span className="choose-brief">{data.chooseCardBrief}</span>
-      </div>
-    );
-  },
-  []);
   return (
     <div className="home-choose">
-      <h2 className="choose-heading">Why Choose Mr. Coconetto</h2>
-      <div className="choose-cards-container">
-        {chooseCardData.map(chooseCardsMapper)}
+      <div className="img-container">
+        <Image src={beachAni} alt="" fill sizes="100%" />
+      </div>
+      <div className="content-container">
+        <h2 className="choose-heading">
+          Why Choose <br />
+          Mr. Coconetto
+        </h2>
+        <p className="choose-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+          accusamus tenetur minus exercitationem libero expedita, quae, esse
+          quidem ipsam, assumenda modi adipisci culpa delectus praesentium
+          consectetur quod ab aspernatur mollitia? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit.
+        </p>
+        <DefaultButton href="/contact">Contact us</DefaultButton>
       </div>
     </div>
   );

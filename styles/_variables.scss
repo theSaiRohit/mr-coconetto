@@ -2,13 +2,7 @@
 
 :root {
   --font-color: white;
-  --btn-color: black;
-  --card-hover-color: #4e4386;
-  --color-carousel-sheet: rgba(255, 255, 255, 0.15);
-  --color-active: rgb(123, 0, 255);
-
-  --h1-font-size: 4rem;
-  --h2-font-size: 3.2rem;
+  --btn-color: var(--color-tetradic2);
 
   --soon-font: "Lilita One", cursive;
 
@@ -17,4 +11,14 @@
   --font-default: "Rubik", sans-serif;
 
   --default-transition: all 0.3s ease;
+
+  --color-primary: #4cb269;
+  --color-secondary: #d57a66;
+  --color-accent: #edc79b;
+
+  --color-tetradic1: #4c62b2;
+  --color-tetradic2: #b24c95;
+  --color-tetradic3: #b29c4c;
+
+  --color-carousel-sheet: rgba(255, 255, 255, 0.1);
 }

@@ -1,6 +1,6 @@
 import { RefObject, useCallback, useEffect, useRef } from "react";
 import HomeCarousel from "./home-carousel";
-import { FaChevronRight } from "react-icons/fa";
+import DefaultButton from "@/components/default-button";
 
 export default function CarouselContainer({
   aboutRef,
@@ -30,22 +30,20 @@ export default function CarouselContainer({
 
   return (
     <div className="carousel">
-      <div className="info-container">
+      <main className="info-container">
         <h1 className="slide-heading">
           <span className="slide-sub-heading _1">We are the greatest</span>
           <span className="slide-sub-heading _2">Mr Coconetto</span>
         </h1>
         <div className="slide-cta">
-          <button
-            className="about-btn default-btn"
-            type="button"
-            onClick={clickHandler}
-          >
-            <span className="btn-span">About Us</span>
-            <FaChevronRight className="arrow-right" />
-          </button>
+          <DefaultButton className="about-btn" onClick={clickHandler}>
+            About Us
+          </DefaultButton>
+          <DefaultButton className="buy-now-btn" href="/products">
+            Buy now
+          </DefaultButton>
         </div>
-      </div>
+      </main>
       <div className="carousel-container" ref={carouselRef}>
         <HomeCarousel />
       </div>

@@ -1,7 +1,6 @@
 .carousel {
   @import "./home-carousel";
   --text-container-y: auto;
-  background-color: pink;
   height: 100vh;
   width: 100%;
   box-shadow: -2.5px 0px 25px rgba(0, 0, 0, 0.85);
@@ -46,9 +45,8 @@
       flex-direction: column;
       font-size: 2rem;
       .slide-sub-heading {
-        color: yellowgreen;
         line-height: 0.9em;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.75), 0 0 10px rgba(0, 0, 0, 0.75);
         &._1 {
           font-size: 0.9em;
           text-transform: uppercase;
@@ -56,11 +54,12 @@
           letter-spacing: 0.4em;
           font-family: var(--font-subheading);
           font-weight: 600;
+          color: var(--color-secondary);
         }
         &._2 {
+          color: var(--color-primary);
           font-family: var(--font-heading);
           font-size: 4em;
-          color: white;
           margin-bottom: 3vh;
         }
       }
@@ -69,7 +68,9 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      .about-btn {
+      gap: 20px;
+      .about-btn,
+      .buy-now-btn {
         font-size: 1rem;
         padding: 1em 2em;
         cursor: pointer;

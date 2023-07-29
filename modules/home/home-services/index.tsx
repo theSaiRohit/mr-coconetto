@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 import { serviceCardData } from "../home-data";
@@ -6,23 +6,26 @@ import ServiceInfo from "./service-info";
 import ServiceCardsWrapper from "./services-card";
 
 export default function HomeService() {
-  const backgroundRef = useRef(null);
-  const defaultService = serviceCardData[0];
-  const [serviceObj, setServiceObj] = useState(defaultService);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="home-service img-container">
+    <section
+      className="home-service img-container"
+      aria-label="Services we offer"
+    >
       <Image
-        src={`/assets/images/${serviceObj?.imgUrl}`}
+        src={`/assets/images/${serviceCardData[activeIndex]?.imgUrl}`}
         alt="takatvar"
         fill
         sizes="100%"
         priority
         className="services-img"
-        ref={backgroundRef}
       />
-      <ServiceInfo dataObj={serviceObj} />
-      <ServiceCardsWrapper setterFunc={setServiceObj} />
-    </div>
+      <ServiceInfo dataArr={serviceCardData} activeIndex={activeIndex} />
+      <ServiceCardsWrapper
+        dataArr={serviceCardData}
+        indexState={[activeIndex, setActiveIndex]}
+      />
+    </section>
   );
 }

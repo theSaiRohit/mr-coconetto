@@ -11,9 +11,9 @@ export default function HomeContainer() {
     <>
       <CarouselContainer aboutRef={aboutRef} />
       <HomeAbout ref={aboutRef} />
+      <HomeService />
       <HomeChoose />
       <HomeGallery />
-      <HomeService />
     </>
   );
 }
