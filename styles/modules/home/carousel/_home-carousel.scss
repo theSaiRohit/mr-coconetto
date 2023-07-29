@@ -1,0 +1,23 @@
+.carousel-container {
+  height: 100%;
+  .home-carousel {
+    height: 100%;
+    .react-multi-carousel-track {
+      height: 100%;
+      .carousel-slide {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .slide-img-container {
+          position: absolute;
+          inset: 0;
+          height: 100%;
+          width: 100%;
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

@@ -36,6 +36,13 @@ yarn-error.log*
 next-env.d.ts
 
 yarn.lock
+.yarn
+.pnp.js
+.pnp.cjs
+.pnp.mjs
+.pnp.loader.js
+.pnp.loader.cjs
+.pnp.loader.mjs
 package-lock.json
 *.log
 *.css
