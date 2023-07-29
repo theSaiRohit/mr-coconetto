@@ -1,0 +1,18 @@
+.service-info-container {
+  width: 40%;
+  .service-heading {
+    font-size: var(--h1-font-size);
+    font-family: var(--font-heading);
+    color: var(--color-active);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  }
+  .service-desc {
+    font-family: var(--font-default);
+    color: var(--font-color);
+    margin: 2vh 0 10vh 0;
+  }
+  .services-cta {
+    display: flex;
+    justify-content: space-between;
+  }
+}

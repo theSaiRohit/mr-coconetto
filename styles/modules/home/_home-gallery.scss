@@ -11,8 +11,10 @@
     height: 100%;
     width: 100%;
     z-index: -1;
+    background-color: rgb(0, 0, 0);
     .gallery-bg {
       object-fit: cover;
+      opacity: 0.75;
     }
   }
   .gallery-text-container {

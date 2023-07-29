@@ -3,6 +3,7 @@ import HomeAbout from "./home-about";
 import HomeChoose from "./home-choose";
 import HomeGallery from "./home-gallery";
 import CarouselContainer from "./carousel/carousel-container";
+import HomeService from "./home-services";
 
 export default function HomeContainer() {
   const aboutRef = useRef(null);
@@ -12,6 +13,7 @@ export default function HomeContainer() {
       <HomeAbout ref={aboutRef} />
       <HomeChoose />
       <HomeGallery />
+      <HomeService />
     </>
   );
 }
