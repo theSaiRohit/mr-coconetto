@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import DefaultButton from "@/components/default-button";
 import Image from "next/image";
 import beachAni from "@images/beach-ani.gif";

@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback, useEffect } from "react";
+import { Dispatch, SetStateAction, useCallback } from "react";
 import Image from "next/image";
 
 export default function ServiceCardsWrapper({

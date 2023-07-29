@@ -1,7 +1,5 @@
 import { forwardRef, type Ref } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa";
 import { homeAboutData } from "./home-data";
 import DefaultButton from "@/components/default-button";
 
