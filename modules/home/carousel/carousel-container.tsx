@@ -1,6 +1,6 @@
 import { RefObject, useCallback, useEffect, useRef } from "react";
-import HomeCarousel from "./home-carousel";
 import DefaultButton from "@/components/default-button";
+import HomeCarousel from "./home-carousel";
 
 export default function CarouselContainer({
   aboutRef,
