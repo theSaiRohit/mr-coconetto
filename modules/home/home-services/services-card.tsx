@@ -19,6 +19,7 @@ export default function ServiceCardsWrapper({
           key={index}
           onClick={() => {
             setIndexNum(index);
+            return;
           }}
         >
           <Image

@@ -38,5 +38,23 @@
     flex-direction: column;
     height: fit-content;
     padding: 10vh 0;
+    &::before {
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 40%);
+    }
+    &::after {
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    &::before {
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 40%);
+    }
+    &::after {
+      clip-path: polygon(0 0, 100% 0, 100% 30%, 0 60%);
+    }
   }
 }
