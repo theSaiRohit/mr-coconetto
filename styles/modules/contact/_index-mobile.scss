@@ -1,0 +1,103 @@
+@media only screen and (max-width: 950px) {
+  & {
+    height: fit-content;
+    padding: 15vh 0;
+  }
+  .contact-wrapper {
+    gap: 10vh;
+    width: 80%;
+    flex-direction: column;
+    transform: translateY(0);
+    padding-left: 0;
+    height: fit-content;
+    background-color: transparent;
+    box-shadow: none;
+    .contact-info-container {
+      position: static;
+      transform: translate(0);
+      width: 100%;
+      .info-header {
+        margin-top: 3vh;
+        text-align: center;
+      }
+      .info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 20px;
+        .info-card {
+          .info-icon {
+            font-size: 8vh;
+          }
+        }
+      }
+    }
+    .contact-form-container {
+      align-items: center;
+      width: 100%;
+      background-color: var(--color-secondary);
+      padding-bottom: 5vh;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+      .form-header {
+        margin-top: 5vh;
+        text-align: center;
+      }
+      .contact-form {
+        align-items: center;
+        width: 100%;
+        input,
+        textarea {
+          width: 80%;
+        }
+        #input-message {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contact-wrapper {
+    .contact-info-container {
+      .info-container {
+        grid-template-columns: repeat(1, 1fr);
+        .info-card {
+          .info-icon {
+            font-size: 4vh;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .contact-wrapper {
+    .contact-form-container {
+      .form-header {
+        .form-heading {
+          font-size: 2.5rem;
+        }
+        .form-subheading {
+          font-size: 0.8rem;
+        }
+      }
+      .contact-form {
+        .default-btn {
+          width: 70%;
+        }
+      }
+    }
+    .contact-info-container {
+      .info-header {
+        font-size: 2.5rem;
+      }
+      .info-container {
+        .info-card {
+          .info-text {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
