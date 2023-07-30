@@ -1,5 +1,5 @@
-import DefaultButton from "@/components/default-button";
 import Image from "next/image";
+import DefaultButton from "@/components/default-button";
 import beachAni from "@images/beach-ani.gif";
 
 export default function HomeChoose() {

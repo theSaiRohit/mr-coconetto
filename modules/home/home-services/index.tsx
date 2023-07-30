@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
-
-import { serviceCardData } from "../home-data";
 import ServiceInfo from "./service-info";
 import ServiceCardsWrapper from "./services-card";
+import { serviceCardData } from "../home-data";
 
 export default function HomeService() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,11 +20,11 @@ export default function HomeService() {
         priority
         className="services-img"
       />
-      <ServiceInfo dataArr={serviceCardData} activeIndex={activeIndex} />
       <ServiceCardsWrapper
         dataArr={serviceCardData}
         indexState={[activeIndex, setActiveIndex]}
       />
+      <ServiceInfo dataArr={serviceCardData} activeIndex={activeIndex} />
     </section>
   );
 }
