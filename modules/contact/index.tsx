@@ -1,9 +1,9 @@
 import { FormEventHandler, useCallback, useRef } from "react";
+import { useEasyGoogleForm } from "@hymns-of-web/use-easy-google-form";
 import type { IconType } from "react-icons";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdLocationOn, MdEmail, MdLocalPhone } from "react-icons/md";
 import DefaultButton from "@/components/default-button";
-import useForm from "@/hooks/use-form";
 
 export default function ContactMe() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -51,7 +51,7 @@ export default function ContactMe() {
       </a>
     );
   };
-  const googleSubmit = useForm({
+  const googleSubmit = useEasyGoogleForm({
     formRef: formRef,
     gFormId: "13fADHJHAepkeN8vm2BstsqVgUR2HctTqLv2792AOGBI",
     links: [
