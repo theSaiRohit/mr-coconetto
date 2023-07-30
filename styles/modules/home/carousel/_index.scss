@@ -77,6 +77,12 @@
   }
   @media only screen and (max-width: 600px) {
     --text-relative-size: 4vw;
+    &::before {
+      clip-path: polygon(0 0, 100% 0, 30% 100%, 0 100%);
+    }
+    &::after {
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 20%);
+    }
     .info-container {
       left: 7.5px;
       padding: 0;
