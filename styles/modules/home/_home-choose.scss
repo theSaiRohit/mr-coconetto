@@ -1,17 +1,15 @@
 .home-choose {
   --choose-height: 75vh;
   --content-width: 40%;
-  --img-width: 20%;
+  --img-width: 40%;
   height: var(--choose-height);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  .img-container {
-    max-height: 100%;
+  .choose-img-container {
     width: var(--img-width);
     height: auto;
-    aspect-ratio: 1;
-    position: relative;
+    aspect-ratio: 16 / 9;
     .img {
       object-fit: contain;
     }
@@ -34,7 +32,7 @@
   @media only screen and (max-width: 1200px) {
     --choose-height: fit-content;
     --content-width: 90%;
-    --img-width: 40%;
+    --img-width: 50%;
     flex-direction: column;
     padding: 7.5vh 0;
     .content-container {
@@ -43,15 +41,18 @@
   }
   @media only screen and (max-width: 900px) {
     --img-width: 60%;
+    .content-container {
+      .choose-text {
+        text-align: justify;
+        width: 90%;
+      }
+    }
   }
   @media only screen and (max-width: 600px) {
     --img-width: 275px;
     .content-container {
       .choose-heading {
         font-size: 10vw;
-      }
-      .choose-text {
-        text-align: center;
       }
     }
   }

@@ -103,4 +103,12 @@ export const serviceCardData = [
     List stuff from your life like all your teachers or all the live music you’ve seen or all the Paul\
     Newman movies you’ve watched.",
   },
+  {
+    imgUrl: "background.jpg",
+    cardHeading: "Service Four",
+    desc: "I have a cure for insomnia. It’s probably worth millions of dollars but I’m giving it to\
+    you free. It isn’t warm milk or chamomile tea. It’s list making.\
+    List stuff from your life like all your teachers or all the live music you’ve seen or all the Paul\
+    Newman movies you’ve watched.",
+  },
 ];

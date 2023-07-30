@@ -1,0 +1,102 @@
+#contact-us {
+  height: 120vh;
+  width: 100%;
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-wrapper {
+    display: flex;
+    width: 700px;
+    height: 80vh;
+    background-color: var(--color-secondary);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-left: 170px;
+    transform: translateX(calc(700px * (55 / 4) / 100));
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    .contact-info-container {
+      position: absolute;
+      width: 55%;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-primary);
+      padding: 5%;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+      @media only screen and (min-width: 900px) {
+        & {
+          height: 80%;
+        }
+      }
+      .info-header {
+        width: 100%;
+        font-size: 3rem;
+        font-family: var(--font-heading);
+        margin: 4vh 0;
+      }
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70%;
+        .info-card {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+          gap: 25px;
+          text-decoration: none;
+          color: black;
+          .info-icon {
+            font-size: 2rem;
+            width: 2rem;
+          }
+          .info-text {
+            font-family: var(--font-subheading);
+            line-height: 20px;
+            width: calc(100% - 2rem);
+          }
+        }
+      }
+    }
+    .contact-form-container {
+      display: flex;
+      flex-direction: column;
+      .form-header {
+        display: flex;
+        flex-direction: column;
+        .form-heading {
+          font-size: 4rem;
+          font-family: var(--font-heading);
+          font-weight: 500;
+        }
+        .form-subheading {
+          font-family: var(--font-subheading);
+          font-size: 1.2rem;
+          margin-bottom: 3vh;
+        }
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+          border: none;
+          outline: none;
+          margin-bottom: 2vh;
+          padding: 15px 10px;
+          border-radius: 5px;
+        }
+        #input-message {
+          resize: none;
+          width: 100%;
+        }
+        .default-btn {
+          margin-top: 2vh;
+        }
+      }
+    }
+  }
+  @import "./index-mobile";
+}

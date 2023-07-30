@@ -1,12 +1,11 @@
 import Image from "next/image";
 import DefaultButton from "@/components/default-button";
-import beachAni from "@images/beach-ani.gif";
 
 export default function HomeChoose() {
   return (
     <div className="home-choose">
-      <div className="img-container">
-        <Image src={beachAni} alt="" fill sizes="100%" />
+      <div className="img-container choose-img-container">
+        <Image src="/assets/images/coconut.png" alt="" fill sizes="100%" />
       </div>
       <div className="content-container">
         <h2 className="choose-heading">
