@@ -1,0 +1,62 @@
+.service-cards-wrapper {
+  height: 75vh;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  .wrapper-heading {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: var(--font-subheading);
+    text-align: center;
+    color: var(--font-color);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  }
+  .service-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+    transition: var(--default-transition);
+    .service-card {
+      background-color: black;
+      width: 100%;
+      height: 150px;
+      border: 1px solid var(--font-color);
+      box-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.5);
+      transition: var(--default-transition);
+      filter: saturate(0%) grayscale(100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0.4;
+      .card-heading {
+        font-size: 1.4rem;
+        z-index: 1;
+        font-family: var(--font-subheading);
+        font-weight: 500;
+        color: var(--font-color);
+        user-select: none;
+        cursor: pointer;
+      }
+      &.active {
+        filter: saturate(110%) grayscale(0%);
+        opacity: 1;
+      }
+    }
+    &:hover .service-card:not(:hover) {
+      filter: saturate(0%) grayscale(100%);
+      opacity: 1;
+    }
+    &:hover .service-card:hover {
+      filter: saturate(100%) grayscale(0%);
+      opacity: 1;
+    }
+  }
+}
