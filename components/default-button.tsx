@@ -17,18 +17,23 @@ export default function DefaultButton({
   btnType = "button",
   children,
 }: PropsWithChildren<DefaultButtonProps>) {
-  return href ? (
-    <Link
-      href={href}
-      className={`default-btn${className ? ` ${className}` : ""}`}
-      onClick={onClick}
-    >
+  const buttonContent = (
+    <>
       {typeof children === "string" ? (
         <span className="btn-span">{children}</span>
       ) : (
         children
       )}
       <FaChevronRight className="arrow-right" />
+    </>
+  );
+  return href ? (
+    <Link
+      href={href}
+      className={`default-btn${className ? ` ${className}` : ""}`}
+      onClick={onClick}
+    >
+      {buttonContent}
     </Link>
   ) : (
     <button
@@ -36,12 +41,7 @@ export default function DefaultButton({
       type={btnType}
       onClick={onClick}
     >
-      {typeof children === "string" ? (
-        <span className="btn-span">{children}</span>
-      ) : (
-        children
-      )}
-      <FaChevronRight className="arrow-right" />
+      {buttonContent}
     </button>
   );
 }
