@@ -1,11 +1,14 @@
 .home-choose {
-  height: 75vh;
+  --choose-height: 75vh;
+  --content-width: 40%;
+  --img-width: 20%;
+  height: var(--choose-height);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   .img-container {
     max-height: 100%;
-    width: 20%;
+    width: var(--img-width);
     height: auto;
     aspect-ratio: 1;
     position: relative;
@@ -14,7 +17,7 @@
     }
   }
   .content-container {
-    width: 40%;
+    width: var(--content-width);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +29,30 @@
     .choose-text {
       font-size: 1.2rem;
       line-height: 2rem;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    --choose-height: fit-content;
+    --content-width: 90%;
+    --img-width: 40%;
+    flex-direction: column;
+    padding: 7.5vh 0;
+    .content-container {
+      align-items: center;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    --img-width: 60%;
+  }
+  @media only screen and (max-width: 600px) {
+    --img-width: 275px;
+    .content-container {
+      .choose-heading {
+        font-size: 10vw;
+      }
+      .choose-text {
+        text-align: center;
+      }
     }
   }
 }

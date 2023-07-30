@@ -1,7 +1,7 @@
 import { forwardRef, type Ref } from "react";
 import Image from "next/image";
-import { homeAboutData } from "./home-data";
 import DefaultButton from "@/components/default-button";
+import { homeAboutData } from "./home-data";
 
 function HomeAbout(_: unknown, ref: Ref<HTMLDivElement>) {
   return (
