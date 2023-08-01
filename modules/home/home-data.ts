@@ -20,29 +20,31 @@ export const landingResponsive = {
 
 export const slideData = [
   {
-    slideBackground: "main.jpg",
+    slideBackground: "car-eight.webp",
     imageAlt: "dummy alt",
   },
   {
-    slideBackground: "wedding.jpg",
+    slideBackground: "car-six.webp",
     imageAlt: "dummy alt",
   },
   {
-    slideBackground: "main.jpg",
+    slideBackground: "car-eight.webp",
     imageAlt: "dummy alt",
   },
   {
-    slideBackground: "wedding.jpg",
+    slideBackground: "car-three.webp",
     imageAlt: "dummy alt",
   },
 ];
 
 export const homeAboutData = {
-  aboutHeading: "Mr cocnetto - India's most trusted coconut",
+  aboutHeading: "Mr coconetto - Personalized prints on fresh coconuts",
   aboutDesc:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veniam reprehenderit rem dolores\
-    omnis cupiditate deserunt corrupti dignissimos amet molestias harum eos itaque est nesciunt labore obcaecati\
-    voluptates sequi veroinventore tempore,praesentium ratione debitis sunt. Voluptatum modi repellat ut!",
+    "Mr. Coconetto is your go-to partner for extraordinary events, where coconuts take center stage. Our\
+    expert team crafts stunning coconut decorations, personalized with names, logos, and designs. We\
+    bring the allure of the tropics to weddings, parties, and corporate gatherings, leaving a\
+    lasting impression on guests. Embrace the essence of paradise with Mr.\
+    Coconetto, where innovation meets the splendor of nature.",
 };
 
 export const chooseCardData = [
@@ -81,34 +83,37 @@ export const galleryText = {
 export const serviceCardData = [
   {
     imgUrl: "misc.jpg",
-    cardHeading: "Service One",
-    desc: "I have a cure for insomnia. It’s probably worth millions of dollars but I’m giving it to\
-    you free. It isn’t warm milk or chamomile tea. It’s list making.\
-    List stuff from your life like all your teachers or all the live music you’ve seen or all the Paul\
-    Newman movies you’ve watched.",
-  },
-  {
-    imgUrl: "wedding.jpg",
-    cardHeading: "Service Two",
-    desc: "I have a cure for insomnia. It’s probably worth millions of dollars but I’m giving it to\
-    you free. It isn’t warm milk or chamomile tea. It’s list making.\
-    List stuff from your life like all your teachers or all the live music you’ve seen or all the Paul\
-    Newman movies you’ve watched.",
+    cardHeading: "Wedding",
+    desc: "Mr. Coconetto specializes in crafting extraordinary wedding events with\
+    a delightful coconut twist. Our expert team infuses tropical vibes and\
+    elegance, imprinting personalized wedding logos and names on fresh coconuts\
+    Let Mr. Coconetto transform your special day into an unforgettable coconut-inspired affair,\
+    where creativity meets romance.",
   },
   {
     imgUrl: "main.jpg",
-    cardHeading: "Service Three",
-    desc: "I have a cure for insomnia. It’s probably worth millions of dollars but I’m giving it to\
-    you free. It isn’t warm milk or chamomile tea. It’s list making.\
-    List stuff from your life like all your teachers or all the live music you’ve seen or all the Paul\
-    Newman movies you’ve watched.",
+    cardHeading: "Birthday Parties",
+    desc: "Mr. Coconetto brings tropical fun to birthday parties with a\
+    touch of uniqueness. Our specialty lies in imprinting personalized names and logos on fresh coconuts,\
+    creating one-of-a-kind party favors. Embrace the allure of coconut-inspired decorations and celebrate\
+    the joyous occasion with nature's charm. Let Mr. Coconetto make your birthday party truly memorable,\
+    where creativity and tropical vibes unite in perfect harmony.",
+  },
+  {
+    imgUrl: "wedding.jpg",
+    cardHeading: "Haldi Cermony",
+    desc: "Mr. Coconetto brings a touch of tropical elegance to the Haldi ceremony.\
+    Our unique coconut-themed setup enhances the traditional ritual with personalized coconut printing.\
+    Celebrate the pre-wedding occasion in style, as our expert team crafts memorable experiences with\
+    creative coconut decorations,adding a delightfultwist tothe auspicious event.Let Mr. Coconetto elevate\
+    your Haldi ceremony with nature's charm and innovation.",
   },
   {
     imgUrl: "background.jpg",
-    cardHeading: "Service Four",
-    desc: "I have a cure for insomnia. It’s probably worth millions of dollars but I’m giving it to\
-    you free. It isn’t warm milk or chamomile tea. It’s list making.\
-    List stuff from your life like all your teachers or all the live music you’ve seen or all the Paul\
-    Newman movies you’ve watched.",
+    cardHeading: "Business Events",
+    desc: "Mr. Coconetto adds a refreshing touch to business events with a hint of\
+    innovation. Stand out with personalized coconut printing showcasing logos and names,\
+    elevating your brand presence. Embrace the natural elegance of coconut-themed decorations,\
+    leaving a lasting impression on clients and partners.",
   },
 ];
