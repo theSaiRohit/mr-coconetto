@@ -13,11 +13,12 @@ export default function HomeChoose() {
           Mr. Coconetto
         </h2>
         <p className="choose-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
-          accusamus tenetur minus exercitationem libero expedita, quae, esse
-          quidem ipsam, assumenda modi adipisci culpa delectus praesentium
-          consectetur quod ab aspernatur mollitia? Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit.
+          Choosing Mr. Coconetto guarantees an unparalleled experience with our
+          coconut-themed events. Our customized coconut printing adds a touch of
+          exclusivity and personalization, making each celebration truly
+          one-of-a-kind. With our expertise and attention to detail, we
+          transform ordinary gatherings into unforgettable tropical escapes,
+          leaving guests in awe.
         </p>
         <DefaultButton href="/contact">Contact us</DefaultButton>
       </div>

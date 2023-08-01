@@ -5,7 +5,7 @@
   padding: 7.5vh 0;
   background-color: #012a4a;
   .company-name {
-    font-size: 4vw;
+    font-size: 3.4vw;
     padding: 0vh 0 20vh 1rem;
     color: var(--color-primary);
     font-weight: 500;
@@ -20,7 +20,7 @@
     .site-links {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.8);
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       line-height: 2.5rem;
       transition: var(--default-transition);
       width: fit-content;
@@ -40,15 +40,14 @@
       align-items: center;
       text-decoration: none;
       color: rgba(255, 255, 255, 0.8);
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       line-height: 3rem;
-      width: fit-content;
       .helper-svg {
         font-size: 1.5rem;
         margin-right: 0.5rem;
       }
       .helper-text {
-        width: calc(100% - 2rem);
+        width: calc(90% - 2rem);
       }
       &:last-child {
         line-height: 1.75rem;
@@ -63,15 +62,20 @@
     padding: 0vh 0 10vh 1rem;
     border-left: 2px solid var(--color-accent);
     color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     .link-grid {
       margin-top: 2vh;
       display: grid;
-      width: 75%;
+      width: 100%;
       grid-template-columns: repeat(4, 1fr);
     }
     .span-text {
       display: flex;
       align-items: center;
+      justify-content: center;
       font-family: var(--font-subheading);
       font-size: 1.8rem;
       word-spacing: 15px;
@@ -81,6 +85,7 @@
     }
     .link-svg {
       color: inherit;
+      justify-self: center;
       svg {
         font-size: 2rem;
         align-self: center;

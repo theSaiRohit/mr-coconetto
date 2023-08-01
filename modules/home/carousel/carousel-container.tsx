@@ -32,7 +32,9 @@ export default function CarouselContainer({
     <div className="carousel">
       <main className="info-container">
         <h1 className="slide-heading">
-          <span className="slide-sub-heading _1">We are the greatest</span>
+          <span className="slide-sub-heading _1">
+            Make every occasion memorable
+          </span>
           <span className="slide-sub-heading _2">Mr Coconetto</span>
         </h1>
         <div className="slide-cta">

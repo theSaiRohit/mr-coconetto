@@ -1,0 +1,33 @@
+.about-desc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--font-color);
+
+  .desc-img-container {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    height: 45vh;
+    width: 40%;
+    transform: translate(0, -10vh);
+    z-index: 1;
+    .desc-bg {
+      object-fit: cover;
+    }
+  }
+  .desc {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 45vh;
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+    transform: translate(0, -10vh);
+    color: black;
+    z-index: 1;
+  }
+}
