@@ -13,7 +13,7 @@ function HomeAbout(_: unknown, ref: Ref<HTMLDivElement>) {
     >
       <div className="img-container home-about-img-container">
         <Image
-          src="/assets/images/crowd.jpg"
+          src="/assets/images/sallu-bhai.webp"
           fill
           sizes="100%"
           alt="About image"

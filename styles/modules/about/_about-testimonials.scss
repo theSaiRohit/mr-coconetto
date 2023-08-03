@@ -1,0 +1,100 @@
+.about-testimonials {
+  --profile-pic-height: 125px;
+  padding: 5vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%);
+    background-color: var(--color-carousel-sheet);
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 35%;
+    clip-path: polygon(0 0, 45% 0, 100% 100%, 0% 100%);
+    background-color: var(--color-carousel-sheet);
+    z-index: 0;
+  }
+  .testimonial-img-container {
+    inset: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    .testimonial-img {
+      object-fit: cover;
+    }
+  }
+  .testimonails-carousel {
+    width: 80%;
+    height: 60vh;
+    z-index: 1;
+
+    .react-multi-carousel-item {
+      display: flex;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
+      .testimonial-slide {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        height: 42.5vh;
+        width: 17.5vw;
+        background-color: var(--color-tetradic3);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: var(--profile-pic-height);
+        .profile-img-container {
+          height: var(--profile-pic-height);
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, -50%);
+          aspect-ratio: 1;
+          border-radius: 50%;
+          position: absolute;
+          overflow: hidden;
+          background-color: #4c62b2;
+          border: 10px solid var(--color-carousel-sheet);
+          .profile-img {
+            object-fit: cover;
+          }
+        }
+        .profile-user {
+          font-family: var(--font-heading);
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .rating {
+          margin: 1rem 0 5vh 0;
+        }
+        .testimonial-desc {
+          width: 90%;
+          text-align: justify;
+          position: relative;
+          z-index: 0;
+          .quotes {
+            position: absolute;
+            top: 0;
+            transform: translate(0, -50%);
+            font-size: 4rem;
+            right: 0;
+            z-index: -1;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+}
