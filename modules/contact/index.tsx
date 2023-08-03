@@ -67,6 +67,7 @@ export default function ContactMe() {
       entry.preventDefault();
       googleSubmit();
       formRef.current?.reset();
+      alert("Your message has been sent!");
     },
     [googleSubmit]
   );

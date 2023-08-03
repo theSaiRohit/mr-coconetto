@@ -19,10 +19,10 @@ export default function Header() {
         <Link href="/" className="link">
           Products
         </Link>
-        <Link href="/" className="link">
+        <Link href="/gallery" className="link">
           Gallery
         </Link>
-        <Link href="/" className="link">
+        <Link href="/contact" className="link">
           Contact
         </Link>
       </nav>
