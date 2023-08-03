@@ -8,7 +8,7 @@ export default function HomeGallery() {
     <div className="home-gallery" aria-label="View our gallery">
       <div className="img-container gallery-img-container">
         <Image
-          src="/assets/images/wedding.jpg"
+          src="/assets/images/gallery.jpg"
           fill
           sizes="100%"
           alt="Header logo"

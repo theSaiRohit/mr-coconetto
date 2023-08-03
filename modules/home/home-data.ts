@@ -82,7 +82,7 @@ export const galleryText = {
 
 export const serviceCardData = [
   {
-    imgUrl: "misc.jpg",
+    imgUrl: "wedding.webp",
     cardHeading: "Wedding",
     desc: "Mr. Coconetto specializes in crafting extraordinary wedding events with\
     a delightful coconut twist. Our expert team infuses tropical vibes and\
@@ -91,7 +91,7 @@ export const serviceCardData = [
     where creativity meets romance.",
   },
   {
-    imgUrl: "main.jpg",
+    imgUrl: "bday.jpg",
     cardHeading: "Birthday Parties",
     desc: "Mr. Coconetto brings tropical fun to birthday parties with a\
     touch of uniqueness. Our specialty lies in imprinting personalized names and logos on fresh coconuts,\
@@ -100,7 +100,7 @@ export const serviceCardData = [
     where creativity and tropical vibes unite in perfect harmony.",
   },
   {
-    imgUrl: "wedding.jpg",
+    imgUrl: "haldi.jpeg",
     cardHeading: "Haldi Cermony",
     desc: "Mr. Coconetto brings a touch of tropical elegance to the Haldi ceremony.\
     Our unique coconut-themed setup enhances the traditional ritual with personalized coconut printing.\
@@ -109,7 +109,7 @@ export const serviceCardData = [
     your Haldi ceremony with nature's charm and innovation.",
   },
   {
-    imgUrl: "background.jpg",
+    imgUrl: "party.webp",
     cardHeading: "Business Events",
     desc: "Mr. Coconetto adds a refreshing touch to business events with a hint of\
     innovation. Stand out with personalized coconut printing showcasing logos and names,\

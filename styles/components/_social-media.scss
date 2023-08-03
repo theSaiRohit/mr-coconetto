@@ -1,0 +1,24 @@
+.links-container {
+  position: fixed;
+  bottom: 17.5vw;
+  right: 5vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  z-index: 1;
+  .link-svg {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.55);
+    font-size: 2.25rem;
+    color: var(--color-primary);
+    background-color: var(--color-tetradic1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    transition: var(--transition-default);
+    &:hover {
+      background-color: var(--font-color);
+      color: var(--color-tetradic1);
+    }
+  }
+}
