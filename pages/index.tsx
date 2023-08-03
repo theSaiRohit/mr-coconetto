@@ -1,5 +1,5 @@
-import HomeContainer from "@/modules/home";
 import Head from "next/head";
+import HomeContainer from "@/modules/home";
 
 export default function Home() {
   return (

@@ -15,6 +15,7 @@ export default function HomeCarousel() {
             sizes="100%"
             alt={data.imageAlt}
             priority
+            className="slide-bg"
           />
         </div>
       </div>
