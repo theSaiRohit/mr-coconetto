@@ -22,7 +22,7 @@
       color: rgba(255, 255, 255, 0.8);
       font-size: 1.2rem;
       line-height: 2.5rem;
-      transition: var(--default-transition);
+      transition: var(--transition-default);
       width: fit-content;
       &:hover {
         color: var(--color-accent);
@@ -52,7 +52,7 @@
       &:last-child {
         line-height: 1.75rem;
       }
-      transition: var(--default-transition);
+      transition: var(--transition-default);
       &:hover {
         color: var(--color-accent);
       }
@@ -89,7 +89,7 @@
       svg {
         font-size: 2rem;
         align-self: center;
-        transition: var(--default-transition);
+        transition: var(--transition-default);
         &:hover {
           fill: var(--color-accent);
         }

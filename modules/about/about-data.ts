@@ -66,3 +66,79 @@ export const testimonialResponsive = {
     slidesToSlide: 1,
   },
 };
+
+export const memberDetails = [
+  {
+    src: "wedding.jpg",
+    memberName: "John Doe",
+    memberJob: "Chief Comedy Officer",
+  },
+  {
+    src: "wedding.jpg",
+    memberName: "John Doe",
+    memberJob: "Chief Comedy Officer",
+  },
+  {
+    src: "wedding.jpg",
+    memberName: "John Doe",
+    memberJob: "Chief Comedy Officer",
+  },
+  {
+    src: "wedding.jpg",
+    memberName: "John Doe",
+    memberJob: "Chief Comedy Officer",
+  },
+  {
+    src: "wedding.jpg",
+    memberName: "John Doe",
+    memberJob: "Chief Comedy Officer",
+  },
+  {
+    src: "wedding.jpg",
+    memberName: "John Doe",
+    memberJob: "Chief Comedy Officer",
+  },
+];
+
+export const faqData = [
+  {
+    question: "What is this question?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
+  Velit commodi nostrum inventorerepellat consequuntur impedit at\
+  corrupti amet suscipit adipisci, natus, eum laborum doloremque\
+  voluptate fugit, animi quo non laudantium dolore sunt? Corrupti, numquam repellat.",
+  },
+  {
+    question: "What is this question?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
+  Velit commodi nostrum inventorerepellat consequuntur impedit at\
+  corrupti amet suscipit adipisci, natus, eum laborum doloremque\
+  voluptate fugit, animi quo non laudantium dolore sunt? Corrupti, numquam repellat.",
+  },
+  {
+    question: "What is this question?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
+  Velit commodi nostrum inventorerepellat consequuntur impedit at\
+  corrupti amet suscipit adipisci, natus, eum laborum doloremque\
+  voluptate fugit, animi quo non laudantium dolore sunt? Corrupti, numquam repellat.",
+  },
+  {
+    question: "What is this question?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
+  Velit commodi nostrum inventorerepellat consequuntur impedit at\
+  corrupti amet suscipit adipisci, natus, eum laborum doloremque\
+  voluptate fugit, animi quo non laudantium dolore sunt? Corrupti, numquam repellat.",
+  },
+  {
+    question: "What is this question?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
+  Velit commodi nostrum inventorerepellat consequuntur impedit at\
+  corrupti amet suscipit adipisci, natus, eum laborum doloremque\
+  voluptate fugit, animi quo non laudantium dolore sunt? Corrupti, numquam repellat.",
+  },
+];
