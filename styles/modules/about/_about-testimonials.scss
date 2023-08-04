@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: black;
   &::before {
     position: absolute;
     content: "";
@@ -34,6 +35,7 @@
     width: 100%;
     .testimonial-img {
       object-fit: cover;
+      opacity: 0.4;
     }
   }
   .testimonails-carousel {

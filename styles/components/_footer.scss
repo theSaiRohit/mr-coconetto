@@ -4,12 +4,27 @@
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   padding: 7.5vh 0;
   background-color: #012a4a;
-  .company-name {
-    font-size: 3.4vw;
-    padding: 0vh 0 20vh 1rem;
-    color: var(--color-primary);
-    font-weight: 500;
-    font-family: var(--font-heading);
+  .company-attributes {
+    display: flex;
+    flex-direction: column;
+    & > .img-container {
+      height: 150px;
+      width: 150px;
+    }
+    .company-name {
+      font-size: 3.4vw;
+      padding: 1vh 0 2vh 1rem;
+      color: var(--color-primary);
+      font-weight: 500;
+      font-family: var(--font-heading);
+    }
+    .company-desc {
+      color: rgba(255, 255, 255, 0.8);
+      padding: 0 0 5vh 1rem;
+      width: 95%;
+      line-height: 2.75vh;
+      font-size: 1.2rem;
+    }
   }
   .sitemap-links {
     border-left: 2px solid var(--color-accent);
@@ -22,7 +37,7 @@
       color: rgba(255, 255, 255, 0.8);
       font-size: 1.2rem;
       line-height: 2.5rem;
-      transition: var(--default-transition);
+      transition: var(--transition-default);
       width: fit-content;
       &:hover {
         color: var(--color-accent);
@@ -52,7 +67,7 @@
       &:last-child {
         line-height: 1.75rem;
       }
-      transition: var(--default-transition);
+      transition: var(--transition-default);
       &:hover {
         color: var(--color-accent);
       }
@@ -89,7 +104,7 @@
       svg {
         font-size: 2rem;
         align-self: center;
-        transition: var(--default-transition);
+        transition: var(--transition-default);
         &:hover {
           fill: var(--color-accent);
         }

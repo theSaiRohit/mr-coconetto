@@ -21,7 +21,7 @@
     grid-template-columns: 100%;
     height: fit-content;
     width: 100%;
-    transition: var(--default-transition);
+    transition: var(--transition-default);
     .service-card {
       background-color: black;
       width: 100%;
@@ -29,7 +29,7 @@
       margin: 2vh 0;
       border: 1px solid var(--font-color);
       box-shadow: 5px 5px 7.5px rgba(0, 0, 0, 0.5);
-      transition: var(--default-transition);
+      transition: var(--transition-default);
       filter: saturate(0%) grayscale(100%);
       display: flex;
       align-items: center;

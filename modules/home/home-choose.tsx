@@ -5,7 +5,7 @@ export default function HomeChoose() {
   return (
     <div className="home-choose">
       <div className="img-container choose-img-container">
-        <Image src="/assets/images/coconut.png" alt="" fill sizes="100%" />
+        <Image src="/assets/images/logo.png" alt="" fill sizes="100%" />
       </div>
       <div className="content-container">
         <h2 className="choose-heading">
