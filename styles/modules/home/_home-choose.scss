@@ -9,7 +9,7 @@
   .choose-img-container {
     width: var(--img-width);
     height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1;
     .img {
       object-fit: contain;
     }

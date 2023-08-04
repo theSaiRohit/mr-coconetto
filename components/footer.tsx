@@ -1,3 +1,5 @@
+import { Ref, forwardRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   AiOutlineFacebook,
@@ -7,10 +9,24 @@ import {
 } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
 
-export default function Footer() {
+function Footer(_: unknown, ref: Ref<HTMLDivElement>) {
   return (
-    <footer id="footer">
-      <span className="company-name">Mr Coconetto</span>
+    <footer id="footer" ref={ref}>
+      <div className="company-attributes">
+        <div className="img-container">
+          <Image
+            src="/assets/images/logo.png"
+            alt="footer logo"
+            fill
+            sizes="100%"
+          />
+        </div>
+        <span className="company-name">Mr Coconetto</span>
+        <p className="company-desc">
+          We do customized printing of your pictures, logos, names and such...
+          on fresh coconuts.
+        </p>
+      </div>
       <div className="sitemap-links">
         <Link href="/" className="home-link site-links">
           Home
@@ -76,3 +92,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default forwardRef(Footer);
