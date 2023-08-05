@@ -35,7 +35,6 @@
     display: none;
   }
   @media only screen and (max-width: 900px) {
-    position: relative;
     .logo-container {
       text-decoration: none;
       color: var(--color-primary);
@@ -45,10 +44,11 @@
       font-family: var(--font-heading);
     }
     .stuff-container {
-      top: var(--header-height);
-      position: absolute;
+      top: calc(var(--header-height) + 5vh);
+      left: 5%;
       transition: all 0.5s ease-in-out;
       display: flex;
+      position: fixed;
       flex-direction: column;
       background-color: var(--color-tetradic1);
       justify-content: space-evenly;
