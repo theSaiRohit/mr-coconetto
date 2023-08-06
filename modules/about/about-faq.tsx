@@ -1,39 +1,30 @@
-import { useCallback, useRef, useState } from "react";
-import { MdExpandLess, MdExpandMore } from "react-icons/md";
+import { useCallback, useRef } from "react";
+import { MdExpandMore } from "react-icons/md";
 import { faqData } from "./about-data";
 
 export default function AboutFaq() {
   const containerRef = useRef<any>(null);
-  const [isActive, setIsActive] = useState(false);
-  const faqMapper = useCallback(
-    (data: any, index: number) => {
-      return (
-        <div className="faq" key={index}>
-          <div
-            className="question"
-            onClick={() => {
-              // const target = container.children[index].classList
-              const container = containerRef.current;
-              setIsActive(true);
-              console.log(container.children[index], isActive);
-            }}
-          >
-            <p>{data.question}</p>
-            {isActive ? (
-              <MdExpandLess className="collapse-svg" />
-            ) : (
-              <MdExpandMore className="expand-svg" />
-            )}
-          </div>
-          <p className={`answer _${index}`}>{data.answer}</p>
+  const faqMapper = useCallback((data: any, index: number) => {
+    return (
+      <div className="faq" key={index}>
+        <div
+          className="question"
+          onClick={() => {
+            const container = containerRef.current;
+            const answer = container.children[index];
+            answer.classList.toggle("active");
+          }}
+        >
+          <p className="question-para">{data.question}</p>
+          <MdExpandMore className="faq-svg" />
         </div>
-      );
-    },
-    [isActive]
-  );
+        <p className="answer">{data.answer}</p>
+      </div>
+    );
+  }, []);
   return (
     <div className="faq-wrapper">
-      <h2 className="faq-heading">FAQ&apos;s</h2>
+      <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="faq-container" ref={containerRef}>
         {faqData.map(faqMapper)}
       </div>
