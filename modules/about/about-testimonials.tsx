@@ -48,7 +48,7 @@ export default function AboutTestimonials() {
         pauseOnHover
         ssr={true}
         infinite
-        autoPlay
+        // autoPlay
         showDots
         arrows
         autoPlaySpeed={2500}

@@ -114,8 +114,10 @@
   @media only screen and (max-width: 1200px) {
     --grid-cols: 2;
     row-gap: 4vh;
-    .company-name {
-      font-size: 7.5vw;
+    .company-attributes {
+      .company-name {
+        font-size: 7.5vw;
+      }
     }
     .text-links-container,
     .visual-links {
@@ -138,9 +140,11 @@
   }
   @media only screen and (max-width: 600px) {
     --grid-cols: 1;
-    .company-name {
-      font-size: 14.5vw;
-      padding-bottom: 0;
+    .company-attributes {
+      .company-name {
+        font-size: 14.5vw;
+        padding-bottom: 0;
+      }
     }
     .sitemap-links,
     .visual-links {
