@@ -35,15 +35,16 @@ export const products = gql`
 `;
 
 export const singleProduct = gql`
-  {
-    query {
-      productsCollection {
-        items {
-          productName
-          productPrice
-          productImage {
-            url
-          }
+  query ($productName: String!) {
+    productsCollection(
+      where: { productName_contains: $productName }
+      limit: 1
+    ) {
+      items {
+        productName
+        productPrice
+        productImage {
+          url
         }
       }
     }
