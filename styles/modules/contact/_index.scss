@@ -1,11 +1,20 @@
 #contact-us {
   height: 110vh;
   width: 100%;
-  background-color: var(--color-accent);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background: linear-gradient(0.5turn, transparent 75%, var(--color-accent));
+  .img-container {
+    height: 90vh;
+    width: 400px;
+    z-index: 1;
+    &._2 {
+      transform: scaleX(-1);
+    }
+  }
   .contact-wrapper {
+    z-index: 2;
     display: flex;
     width: 700px;
     height: 80vh;

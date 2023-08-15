@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background-color: var(--color-accent);
   .gal-heading {
     font-size: 4rem;
     margin-top: 15vh;
@@ -22,6 +21,7 @@
       .gal-subheading {
         font-size: 2rem;
         margin-top: 5vh;
+        grid-template-columns: repeat(2, 1fr);
         font-family: var(--font-subheading);
       }
       .gallery-items {
@@ -30,12 +30,12 @@
         display: grid;
         grid-template-rows: 35% 5% 20% 5% 35%;
         grid-template-columns: 30% 5% 30% 5% 30%;
-        overflow: hidden;
         margin: 5vh 0;
         .img-container {
           height: 100%;
           width: 100%;
           background-color: rgb(182, 182, 182);
+          box-shadow: 5px 5px 15px black;
           &._1 {
             grid-row: 1 / span 1;
             grid-column: 1 / span 1;
@@ -67,4 +67,5 @@
       }
     }
   }
+  @import "./index-mobile";
 }
