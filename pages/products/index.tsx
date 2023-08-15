@@ -7,13 +7,12 @@ export const getStaticProps = async () => {
   const productQuery: any = await GQLClient.request(products);
   const productData = productQuery;
   return {
-    props: { productData },
+    props: { data: productData.productsCategoryCollection.items },
     revalidate: 6 * 60 * 60,
   };
 };
 
 export default function Products(props: any) {
-  const { productData } = props;
-  const data = productData.productsCategoryCollection.items;
+  const { data } = props;
   return <ProductsContainer allProductsData={data} />;
 }
