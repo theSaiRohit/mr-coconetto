@@ -7,7 +7,7 @@ export default function Team() {
       <div className="member-card">
         <div className="member-info">
           <h4 className="member-name">John Doe</h4>
-          <span className="member-job">Chief Comedy Officer</span>
+          <span className="member-job">Chief Officer</span>
           <p className="info">
             {`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptate aperiam blanditiis corporis\
           quae alias quasi. Laborum ipsa amet tenetur porro nulla odio cum vitae, sunt dolor, beatae\
@@ -29,7 +29,7 @@ export default function Team() {
       <div className="member-card">
         <div className="member-info">
           <h4 className="member-name">John Doe</h4>
-          <span className="member-job">Chief Comedy Officer</span>
+          <span className="member-job">Chief Officer</span>
           <p className="info">
             {`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptate aperiam blanditiis corporis\
           quae alias quasi. Laborum ipsa amet tenetur porro nulla odio cum vitae, sunt dolor, beatae\

@@ -1,4 +1,5 @@
 import { FormEventHandler, useCallback, useRef } from "react";
+import Image from "next/image";
 import { useEasyGoogleForm } from "@hymns-of-web/use-easy-google-form";
 import type { IconType } from "react-icons";
 import { AiFillInstagram } from "react-icons/ai";
@@ -71,8 +72,17 @@ export default function ContactMe() {
     },
     [googleSubmit]
   );
+
   return (
     <section aria-label="contact us" id="contact-us">
+      <div className="img-container _1">
+        <Image
+          src="/assets/images/tree.webp"
+          alt="tree"
+          fill
+          sizes="100%"
+        ></Image>
+      </div>
       <div className="contact-wrapper">
         <div className="contact-form-container">
           <div className="form-header">
@@ -120,6 +130,14 @@ export default function ContactMe() {
           <h1 className="info-header">Contact Us</h1>
           <div className="info-container">{contactInfo.map(mapper)}</div>
         </div>
+      </div>
+      <div className="img-container _2">
+        <Image
+          src="/assets/images/tree.webp"
+          alt="tree"
+          fill
+          sizes="100%"
+        ></Image>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 .product-category {
-  margin-top: 100px;
   --grid-cols: 3;
+  --card-length: 275px;
+  margin-top: 100px;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,7 @@
       flex-direction: column;
       align-items: center;
       .product-img-container {
-        width: 275px;
+        width: var(--card-length);
         aspect-ratio: 1;
         .product-img {
           object-fit: cover;
@@ -42,5 +43,21 @@
         margin-top: 2vh;
       }
     }
+  }
+  @media only screen and (max-width: 1200px) {
+    --grid-cols: 2;
+  }
+  @media only screen and (max-width: 750px) {
+    --card-length: 200px;
+    .category-items {
+      .product {
+        .buy-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    --grid-cols: 1;
   }
 }

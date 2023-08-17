@@ -72,19 +72,6 @@ export const testimonialResponsive = {
   },
 };
 
-export const memberDetails = [
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-];
-
 export const faqData = [
   {
     question: "What is this question?",

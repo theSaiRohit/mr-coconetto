@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background-color: var(--color-accent);
   .gal-heading {
     font-size: 4rem;
     margin-top: 15vh;
@@ -11,53 +10,62 @@
     font-family: var(--font-heading);
     text-align: center;
   }
-  .gal-subheading {
-    font-size: 2rem;
-    margin-top: 3vh;
+  .gallery-sections {
+    display: flex;
+    flex-direction: column;
     max-width: 1170px;
     width: 90%;
-    font-family: var(--font-subheading);
-  }
-  .gallery-items {
-    max-width: 1170px;
-    width: 90%;
-    height: 60vh;
-    display: grid;
-    grid-template-rows: 35% 5% 20% 5% 35%;
-    grid-template-columns: 30% 5% 30% 5% 30%;
-    overflow: hidden;
-    margin: 4vh 0;
-    .img-container {
-      height: 100%;
-      width: 100%;
-      background-color: rgb(182, 182, 182);
-      &._1 {
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 1;
+    .gallery-section {
+      display: flex;
+      flex-direction: column;
+      .gal-subheading {
+        font-size: 2rem;
+        margin-top: 5vh;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: var(--font-subheading);
       }
-      &._2 {
-        grid-row: 3 / span 3;
-        grid-column: 1 / span 1;
-      }
-      &._3 {
-        grid-row: 1 / span 3;
-        grid-column: 3 / span 1;
-      }
-      &._4 {
-        grid-row: 5 / span 1;
-        grid-column: 3 / span 1;
-      }
-      &._5 {
-        grid-row: 1 / span 1;
-        grid-column: 5 / span 1;
-      }
-      &._6 {
-        grid-row: 3 / span 3;
-        grid-column: 5 / span 1;
-      }
-      img {
-        object-fit: contain;
+      .gallery-items {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 35% 5% 20% 5% 35%;
+        grid-template-columns: 30% 5% 30% 5% 30%;
+        margin: 5vh 0;
+        .img-container {
+          height: 100%;
+          width: 100%;
+          background-color: rgb(182, 182, 182);
+          box-shadow: 5px 5px 15px black;
+          &._1 {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+          }
+          &._2 {
+            grid-row: 3 / span 3;
+            grid-column: 1 / span 1;
+          }
+          &._3 {
+            grid-row: 1 / span 3;
+            grid-column: 3 / span 1;
+          }
+          &._4 {
+            grid-row: 5 / span 1;
+            grid-column: 3 / span 1;
+          }
+          &._5 {
+            grid-row: 1 / span 1;
+            grid-column: 5 / span 1;
+          }
+          &._6 {
+            grid-row: 3 / span 3;
+            grid-column: 5 / span 1;
+          }
+          img {
+            object-fit: cover;
+          }
+        }
       }
     }
   }
+  @import "./index-mobile";
 }

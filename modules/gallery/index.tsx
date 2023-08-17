@@ -1,50 +1,33 @@
 import Image from "next/image";
+import { galImageData } from "./gallery-interface";
 
-export default function Gallery() {
-  const galImages = [
-    {
-      src: "/assets/images/coconut.png",
-      alt: "Image 1",
-    },
-    {
-      src: "/assets/images/coconut.png",
-      alt: "Image 2",
-    },
-    {
-      src: "/assets/images/coconut.png",
-      alt: "Image 3",
-    },
-    {
-      src: "/assets/images/coconut.png",
-      alt: "Image 4",
-    },
-    {
-      src: "/assets/images/coconut.png",
-      alt: "Image 5",
-    },
-    {
-      src: "/assets/images/coconut.png",
-      alt: "Image 6",
-    },
-  ];
-  const mapper = (
-    item: {
-      src: string;
-      alt: string;
-    },
-    index: number
-  ) => {
-    return (
-      <div className={`img-container _${index + 1}`} key={index}>
-        <Image src={item.src} alt={item.alt} fill sizes="100%" />
+const imageMapper = (
+  item: galImageData["imagesCollection"]["items"][0],
+  index: number
+) => {
+  return (
+    <div className={`img-container _${index + 1}`} key={index}>
+      <Image src={item.url} alt="xyz" fill sizes="100%" />
+    </div>
+  );
+};
+
+const sectionMapper = (elem: galImageData, ind: number) => {
+  return (
+    <div className="gallery-section" key={ind}>
+      <p className="gal-subheading">{elem.heading}</p>
+      <div className="gallery-items">
+        {elem.imagesCollection.items.map(imageMapper)}
       </div>
-    );
-  };
+    </div>
+  );
+};
+
+export default function Gallery({ gdata }: { gdata: galImageData[] }) {
   return (
     <section aria-label="gallery" id="gallery-main">
       <h1 className="gal-heading">GALLERY</h1>
-      <p className="gal-subheading">Peruse at your will</p>
-      <div className="gallery-items">{galImages.map(mapper)}</div>
+      <div className="gallery-sections">{gdata.map(sectionMapper)}</div>
     </section>
   );
 }

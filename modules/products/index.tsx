@@ -7,7 +7,7 @@ export default function ProductsContainer({
   allProductsData: any;
 }) {
   return (
-    <section id="home" aria-label="home">
+    <section id="products" aria-label="products">
       <Head>
         <title>Mr Coconetto | Products</title>
         <meta name="description" content="hello world" />
