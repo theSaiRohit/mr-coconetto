@@ -43,6 +43,7 @@ export const singleProduct = gql`
       items {
         productName
         productPrice
+        productDescription
         productImage {
           url
         }

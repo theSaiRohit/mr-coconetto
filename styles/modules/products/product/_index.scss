@@ -1,0 +1,27 @@
+#single-product-container {
+  display: flex;
+  width: 100%;
+  margin-top: calc(var(--header-height) + 2vh);
+  align-items: center;
+  justify-content: space-around;
+  .product-img-container {
+    width: 40%;
+    height: 700px;
+    .product-img {
+      object-fit: contain;
+    }
+  }
+  .product-info {
+    width: 50%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    .qr-img-container {
+      width: 200px;
+      aspect-ratio: 1;
+      .qr-img {
+        object-fit: cover;
+      }
+    }
+  }
+}

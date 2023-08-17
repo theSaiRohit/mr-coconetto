@@ -1,30 +1,36 @@
 import { GQLClient } from "@/clients";
 import { products, singleProduct } from "@/gql/queries";
+import ProductContainer from "@/modules/products/product";
 
 export const getStaticPaths = async () => {
-  // const a = await GQLClient.request(products);
-  // const b = a.productsCategoryCollection.items;
-  // let d;
-  // const c = b.map((data) => {
-  //   d = data.allProductsCollection.items;
-  //   console.log(d);
-  // });
-  // d.map((data) => {
-  // });
+  const allProductsQuery: any = await GQLClient.request(products);
+  const allProductsData: any =
+    allProductsQuery.productsCategoryCollection.items;
+  let categoryData: any[] = [];
+  allProductsData.forEach((categoryProducts: any) => {
+    const a = categoryProducts.allProductsCollection.items.map((data: any) => {
+      return {
+        params: {
+          product: (data.productName as string)
+            .replace(/\s/gm, "-")
+            .toLowerCase(),
+        },
+      };
+    });
+    categoryData = [...categoryData, ...a];
+  });
   return {
-    paths: [{ params: { product: "coconut-one" } }],
+    paths: categoryData,
     fallback: false,
   };
 };
 
 export const getStaticProps = async (context: any) => {
-  // console.log(context);
   const { params }: any = context;
-  console.log("this ", params);
   const url = params?.product;
 
   const productQuery = (await GQLClient.request(singleProduct, {
-    productName: "coconut one",
+    productName: url.replaceAll("-", " "),
   })) as any;
   const productData = productQuery.productsCollection.items;
   return {
@@ -33,7 +39,6 @@ export const getStaticProps = async (context: any) => {
   };
 };
 
-export default function Product(props: any) {
-  console.log(props);
-  return <div>[product]</div>;
+export default function Product({ productData }: { productData: any }) {
+  return <ProductContainer data={productData} />;
 }
