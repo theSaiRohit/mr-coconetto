@@ -1,11 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
 import DefaultButton from "@/components/default-button";
+import { ProductDataType } from "../types";
 
-export default function ProductContainer({ data }: { data: any }) {
+export default function ProductContainer({
+  data,
+}: {
+  data: ProductDataType[];
+}) {
   return (
     <>
-      {data.map((item: any, index: number) => {
+      {data.map((item, index: number) => {
         return (
           <section
             id="single-product-container"

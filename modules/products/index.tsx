@@ -1,10 +1,11 @@
 import Head from "next/head";
 import ProductCategory from "./product-category";
+import { ProductCategoryType } from "./types";
 
 export default function ProductsContainer({
   allProductsData,
 }: {
-  allProductsData: any;
+  allProductsData: ProductCategoryType[];
 }) {
   return (
     <section id="products" aria-label="products">
