@@ -56,11 +56,11 @@ export default function ContactMe() {
     formRef: formRef,
     gFormId: "13fADHJHAepkeN8vm2BstsqVgUR2HctTqLv2792AOGBI",
     links: [
-      { entryId: "97866395", formId: "input-name" },
-      { entryId: "1327291787", formId: "input-phone" },
-      { entryId: "1648415632", formId: "input-email" },
-      { entryId: "861143231", formId: "input-address" },
-      { entryId: "1787233755", formId: "input-message" },
+      { entryId: "97866395", formId: "input-name", type: "text" },
+      { entryId: "1327291787", formId: "input-phone", type: "text" },
+      { entryId: "1648415632", formId: "input-email", type: "text" },
+      { entryId: "861143231", formId: "input-address", type: "text" },
+      { entryId: "1787233755", formId: "input-message", type: "textarea" },
     ],
   });
   const submitHandler = useCallback<FormEventHandler>(
