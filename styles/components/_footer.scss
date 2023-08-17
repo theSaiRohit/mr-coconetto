@@ -2,7 +2,7 @@
   --grid-cols: 4;
   display: grid;
   grid-template-columns: repeat(var(--grid-cols), 1fr);
-  padding: 7.5vh 0;
+  padding: 7.5vh 3vw;
   background-color: #012a4a;
   .company-attributes {
     display: flex;
@@ -74,13 +74,15 @@
     }
   }
   .visual-links {
-    padding: 0vh 0 10vh 1rem;
     border-left: 2px solid var(--color-accent);
     color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @media only screen and (min-width: 1200px) {
+      padding: 0vh 0 10vh 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
     .link-grid {
       margin-top: 2vh;
       display: grid;
@@ -114,8 +116,10 @@
   @media only screen and (max-width: 1200px) {
     --grid-cols: 2;
     row-gap: 4vh;
-    .company-name {
-      font-size: 7.5vw;
+    .company-attributes {
+      .company-name {
+        font-size: 7.5vw;
+      }
     }
     .text-links-container,
     .visual-links {
@@ -138,9 +142,11 @@
   }
   @media only screen and (max-width: 600px) {
     --grid-cols: 1;
-    .company-name {
-      font-size: 14.5vw;
-      padding-bottom: 0;
+    .company-attributes {
+      .company-name {
+        font-size: 14.5vw;
+        padding-bottom: 0;
+      }
     }
     .sitemap-links,
     .visual-links {

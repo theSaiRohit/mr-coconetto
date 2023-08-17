@@ -57,48 +57,20 @@ export const testimonialResponsive = {
   },
   tablet: {
     breakpoint: { max: 1200, min: 900 },
-    items: 1,
+    items: 2,
     slidesToSlide: 1,
   },
-  mobile: {
-    breakpoint: { max: 900, min: 0 },
+  mobileLarge: {
+    breakpoint: { max: 900, min: 600 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  mobileSmall: {
+    breakpoint: { max: 600, min: 0 },
     items: 1,
     slidesToSlide: 1,
   },
 };
-
-export const memberDetails = [
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-  {
-    src: "wedding.jpg",
-    memberName: "John Doe",
-    memberJob: "Chief Comedy Officer",
-  },
-];
 
 export const faqData = [
   {
@@ -118,7 +90,11 @@ export const faqData = [
   voluptate fugit, animi quo non laudantium dolore sunt? Corrupti, numquam repellat.",
   },
   {
-    question: "What is this question?",
+    question:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
+  Velit commodi nostrum inventorerepellat\
+  adipisci, natus, eum laborum doloremque\
+  voluptate fugit, animi quo non",
     answer:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
   Velit commodi nostrum inventorerepellat consequuntur impedit at\

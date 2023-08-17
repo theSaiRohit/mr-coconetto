@@ -1,0 +1,105 @@
+#single-product-container {
+  --product-size: 600px;
+  --description-length: 500px;
+  display: flex;
+  width: 100%;
+  margin-top: calc(var(--header-height) + 2vh);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10vh 0;
+  .product-img-container {
+    width: var(--product-size);
+    aspect-ratio: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    // // overflow
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(0 50%, 100% 0%, 50% 100%, 0% 100%);
+      background-color: var(--color-carousel-sheet);
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(50% 0, 100% 0, 100% 50%, 0% 100%);
+      background-color: var(--color-carousel-sheet);
+      z-index: 1;
+    }
+    .product-img {
+      object-fit: cover;
+    }
+  }
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 1.2rem;
+    width: fit-content;
+    .qr-container {
+      padding: 15px;
+      border: 1px solid black;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .qr-img-container {
+        width: 250px;
+        aspect-ratio: 1;
+        .qr-img {
+          object-fit: cover;
+        }
+      }
+      .product-price {
+        background-color: var(--color-primary);
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+      }
+      .qr-msg {
+        color: rgb(84, 83, 83);
+      }
+    }
+    .product-name {
+      font-size: 3.4rem;
+      font-family: var(--font-heading);
+      color: var(--color-secondary);
+    }
+    .product-description {
+      width: var(--description-length);
+      line-height: 2rem;
+      text-align: justify;
+    }
+    .msg-btn {
+      margin-top: 4vh;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    --product-size: 400px;
+    --description-length: 400px;
+  }
+  @media only screen and (max-width: 900px) {
+    --product-size: 60%;
+    --description-length: 60%;
+    flex-direction: column;
+    align-items: center;
+    .product-info {
+      align-items: center;
+      margin-top: 5vh;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    --product-size: 90%;
+    --description-length: 90%;
+  }
+}

@@ -2,6 +2,7 @@
   --choose-height: 75vh;
   --content-width: 40%;
   --img-width: 40%;
+  --header-size: 3.5rem;
   height: var(--choose-height);
   display: flex;
   align-items: center;
@@ -21,7 +22,7 @@
     justify-content: center;
     gap: 4vh;
     .choose-heading {
-      font-size: 4rem;
+      font-size: var(--header-size);
       font-family: var(--font-heading);
     }
     .choose-text {
@@ -33,6 +34,7 @@
     --choose-height: fit-content;
     --content-width: 90%;
     --img-width: 50%;
+    --header-size: 3rem;
     flex-direction: column;
     padding: 7.5vh 0;
     .content-container {

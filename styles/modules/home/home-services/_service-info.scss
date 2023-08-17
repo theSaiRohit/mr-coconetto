@@ -18,14 +18,16 @@
     font-size: 7rem;
     font-family: var(--font-heading);
     color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.6);
   }
   .service-desc {
+    min-height: 200px;
     font-family: var(--font-default);
     color: var(--font-color);
     margin: 3vh 0 10vh 0;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1), 0 0 7.5px rgba(0, 0, 0, 0.8);
   }
   .services-cta {
     display: flex;

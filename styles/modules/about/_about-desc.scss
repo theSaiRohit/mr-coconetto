@@ -3,10 +3,8 @@
   display: flex;
   justify-content: center;
   background-color: var(--font-color);
-
   .desc-img-container {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    height: 45vh;
     width: 40%;
     transform: translate(0, -10vh);
     z-index: 1;
@@ -17,17 +15,32 @@
   .desc {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     width: 40%;
-    height: 45vh;
     background-color: var(--color-accent);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 2rem;
     font-size: 1.2rem;
     line-height: 2rem;
     text-align: justify;
     transform: translate(0, -10vh);
     color: black;
     z-index: 1;
+  }
+  @media only screen and (max-width: 1200px) {
+    .desc {
+      line-height: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    .desc-img-container {
+      width: 90%;
+      height: 40vh;
+    }
+    .desc {
+      width: 90%;
+    }
   }
 }

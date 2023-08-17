@@ -1,33 +1,34 @@
 #main-header {
   position: fixed;
-  top: 5vh;
-  left: 5%;
-  width: 90%;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: var(--header-height);
   background-color: var(--color-tetradic1);
-  z-index: 999;
+  z-index: 5;
   padding: 0 2.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 10px 0 15px rgba(0, 0, 0);
   .logo-container {
     text-decoration: none;
     color: var(--color-primary);
     font-weight: 900;
     letter-spacing: 0.3rem;
-    font-size: 1.75rem;
+    font-size: 2.2rem;
     font-family: var(--font-heading);
   }
   .stuff-container {
     display: flex;
-    gap: 2vw;
+    gap: 2.5vw;
     .link {
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       text-decoration: none;
       color: var(--color-primary);
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-family: var(--font-subheading);
     }
   }
