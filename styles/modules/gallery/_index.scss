@@ -19,8 +19,10 @@
       display: flex;
       flex-direction: column;
       .gal-subheading {
-        font-size: 2rem;
+        font-size: 2.6rem;
+        font-weight: 500;
         margin-top: 5vh;
+        color: var(--color-tetradic2);
         grid-template-columns: repeat(2, 1fr);
         font-family: var(--font-subheading);
       }
@@ -62,6 +64,7 @@
           }
           img {
             object-fit: cover;
+            object-position: top;
           }
         }
       }
