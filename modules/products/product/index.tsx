@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import DefaultButton from "@/components/default-button";
@@ -8,6 +9,12 @@ export default function ProductContainer({
 }: {
   data: ProductDataType[];
 }) {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  useEffect(() => {
+    if (window.innerWidth < 900) {
+      setIsMobile(true);
+    }
+  }, [isMobile]);
   return (
     <>
       {data.map((item, index: number) => {
@@ -42,13 +49,17 @@ export default function ProductContainer({
                     className="qr-img"
                   />
                 </div>
-                <a
-                  href="upi://pay?pa=8700331212@paytm&pn=MR COCONETTO BEVERAGES INDIA&cu=INR"
-                  className="product-price"
-                >
-                  ₹ {item.productPrice}
-                </a>
-                <span className="qr-msg">Scan QR code</span>
+                {!isMobile && <span className="qr-msg">Scan QR code</span>}
+
+                <span className="product-price">₹ {item.productPrice}</span>
+                {isMobile && (
+                  <DefaultButton
+                    href="upi://pay?pa=8700331212@paytm&pn=MR COCONETTO BEVERAGES INDIA&cu=INR"
+                    className="buy-link"
+                  >
+                    Click Here to Buy Now
+                  </DefaultButton>
+                )}
               </div>
               <p className="product-description">{item.productDescription}</p>
               <DefaultButton className="msg-btn">Message Us</DefaultButton>

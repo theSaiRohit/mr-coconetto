@@ -59,12 +59,19 @@
           object-fit: cover;
         }
       }
-      .product-price {
+      .buy-link {
+        text-align: center;
+        padding: 1em;
         background-color: var(--color-primary);
-        padding: 5px 0;
+        border: 1px solid var(--color-primary);
+      }
+      .product-price {
+        text-decoration: none;
+        padding: 10px 0;
         width: 100%;
         text-align: center;
         font-weight: 600;
+        color: inherit;
       }
       .qr-msg {
         color: rgb(84, 83, 83);
