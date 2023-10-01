@@ -35,7 +35,7 @@ export default function ProductContainer({
               <div className="qr-container">
                 <div className="qr-img-container img-container">
                   <Image
-                    src={item.productImage.url}
+                    src="/assets/images/qr code.jpg"
                     fill
                     sizes="100%"
                     alt={item.productName}

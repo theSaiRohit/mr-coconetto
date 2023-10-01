@@ -6,13 +6,13 @@ export default function Team() {
       <h2 className="team-heading">Founders</h2>
       <div className="member-card">
         <div className="member-info">
-          <h4 className="member-name">John Doe</h4>
-          <span className="member-job">Chief Officer</span>
+          <h4 className="member-name">Rupesh Gaur</h4>
+          <span className="member-job">CEO, Mr Coconetto</span>
           <p className="info">
-            {`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptate aperiam blanditiis corporis\
-          quae alias quasi. Laborum ipsa amet tenetur porro nulla odio cum vitae, sunt dolor, beatae\
-          doloremque quaerat ipsum molestias eligendi officiis inventore nobis ratione culpa, hic magni.\
-          Voluptas harum quibusdam officiis, soluta asperiores mollitia distinctio culpa sit!`}
+            {`
+            Mr Rupesh Gaur started Mr Coconetto in 2021 along with his close friends and family.\
+            He is the driving force behind Mr Coconetto's success. Ever since he has attended\
+            several national and international events for entrepreneurial purposes.`}
           </p>
         </div>
         <div className="img-container member-img-container">
@@ -28,13 +28,13 @@ export default function Team() {
       </div>
       <div className="member-card">
         <div className="member-info">
-          <h4 className="member-name">John Doe</h4>
-          <span className="member-job">Chief Officer</span>
+          <h4 className="member-name">Radha Gaur</h4>
+          <span className="member-job">MD, Mr Coconetto</span>
           <p className="info">
-            {`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptate aperiam blanditiis corporis\
-          quae alias quasi. Laborum ipsa amet tenetur porro nulla odio cum vitae, sunt dolor, beatae\
-          doloremque quaerat ipsum molestias eligendi officiis inventore nobis ratione culpa, hic magni.\
-          Voluptas harum quibusdam officiis, soluta asperiores mollitia distinctio culpa sit!`}
+            {`
+            Mrs Radha Gaur along with Rupesh started Mr Coconetto in 2021 along with their close friends and family.\
+            She has helped make several important key decisions to help thrive the business in the community.\
+            `}
           </p>
         </div>
         <div className="img-container member-img-container">

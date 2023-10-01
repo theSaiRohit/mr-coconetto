@@ -33,7 +33,7 @@ export default function ProductCategory({
                         {product.productName}
                       </span>
                       <span className="product-price">
-                        $ {product.productPrice}
+                        ₹ {product.productPrice}
                       </span>
                       <DefaultButton
                         className="buy-btn"

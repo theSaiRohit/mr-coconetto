@@ -19,7 +19,7 @@ export default function HomeGallery() {
       <div className="gallery-text-container">
         <span className="gallery-span">{galleryText.span}</span>
         <h2 className="gallery-heading">{galleryText.h2Content}</h2>
-        <Link href="/" className="gallery-btn default-btn">
+        <Link href="/gallery" className="gallery-btn default-btn">
           <span className="btn-span">{galleryText.galleryBtn}</span>
           <FaChevronRight className="arrow-right" />
         </Link>
