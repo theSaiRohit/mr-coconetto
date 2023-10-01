@@ -42,7 +42,12 @@ export default function ProductContainer({
                     className="qr-img"
                   />
                 </div>
-                <span className="product-price">₹ {item.productPrice}</span>
+                <a
+                  href="upi://pay?pa=8700331212@paytm&pn=MR COCONETTO BEVERAGES INDIA&cu=INR"
+                  className="product-price"
+                >
+                  ₹ {item.productPrice}
+                </a>
                 <span className="qr-msg">Scan QR code</span>
               </div>
               <p className="product-description">{item.productDescription}</p>
