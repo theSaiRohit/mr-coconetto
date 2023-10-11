@@ -1,18 +1,18 @@
 import { useCallback, useRef } from "react";
 import { MdExpandMore } from "react-icons/md";
-import { faqData } from "./about-data";
+import { faqs } from "./about-interface";
 
-export default function AboutFaq() {
-  const containerRef = useRef<any>(null);
-  const faqMapper = useCallback((data: any, index: number) => {
+export default function AboutFaq({ collection }: { collection: faqs[] }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const faqMapper = useCallback((data: faqs, index: number) => {
     return (
       <div className="faq" key={index}>
         <div
           className="question"
           onClick={() => {
             const container = containerRef.current;
-            const answer = container.children[index];
-            answer.classList.toggle("active");
+            const answer = container?.children[index];
+            answer?.classList.toggle("active");
           }}
         >
           <p className="question-para">{data.question}</p>
@@ -26,7 +26,7 @@ export default function AboutFaq() {
     <div className="faq-wrapper">
       <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="faq-container" ref={containerRef}>
-        {faqData.map(faqMapper)}
+        {collection.map(faqMapper)}
       </div>
     </div>
   );

@@ -51,3 +51,40 @@ export const singleProduct = gql`
     }
   }
 `;
+
+export const founders = gql`
+  query {
+    foundersCollection {
+      items {
+        name
+        position
+        description
+        profilePicture {
+          url
+        }
+      }
+    }
+  }
+`;
+
+export const aboutPageInfo = gql`
+  query {
+    aboutPageInfoCollection {
+      items {
+        aboutDescription
+        backgroundImg {
+          url
+        }
+        descriptionImg {
+          url
+        }
+        faqsCollection {
+          items {
+            question
+            answer
+          }
+        }
+      }
+    }
+  }
+`;
